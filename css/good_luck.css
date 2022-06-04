@@ -1,0 +1,147 @@
+/* 采用什么编码解析文件 */
+@charset "utf-8";
+
+/*
+ * 使用id选择器渲染id="container"标签的样式
+ */
+#container {
+	width: 350px;/* 宽350px */
+	margin: 50px auto;/* 顶部外间距50px 居中 */
+}
+
+/* -------------------------标题 begin------------------------- */
+/*
+ * 使用id选择器渲染id="title"标签的样式
+ */
+#title {
+	background: gray;/* 背景色灰色 */
+	color: white;/* 字体白色 */
+	font-weight: bold;/* 字体加粗 */
+	font-size: 20px;/* 字体大小 */
+	padding: 10px 20px;/* 设置内间距 */
+	margin-bottom: 10px;/* 设置底部外间距10px */
+}
+/* -------------------------标题 end--------------------------- */
+
+/* -------------------------详细信息 begin---------------------- */
+/*
+ * 使用id选择器渲染id="info"标签的样式
+ */
+#info {
+	font-size: 12px;/* 字体大小 */
+	text-align: center;/* 文本居中 */
+	color: red;/* 字体红色 */
+}
+
+/*
+ * 使用id选择器定位id="info"标签
+ * 然后渲染其子标签b的样式
+ */
+#info b {
+	background: crimson;/* 背景色深红色 */
+	color: white;/* 字体白色 */
+	padding: 0 3px;/* 设置内间距 */
+	margin: 0 3px;/* 设置外间距 */
+}
+/* -------------------------详细信息 end------------------------ */
+
+/* -------------------------日期时间 begin---------------------- */
+/*
+ * 使用id选择器渲染id="date"标签的样式
+ */
+#date {
+	font-size: 22px;/* 字体大小 */
+	font-weight: bold;/* 字体加粗 */
+	line-height: 40px;/* 行间距 */
+    text-align: center;/* 居中 */
+    border-bottom: 1px solid gray;/* 底部边框颜色灰色 粗细1px */
+}
+/* -------------------------日期时间 end------------------------ */
+
+/* -------------------------求签部分 begin---------------------- */
+/*
+ * 使用id选择器渲染id="good_luck"标签的样式
+ */
+#good_luck {
+	font-size: 14px;/* 字体大小 */
+}
+
+/*
+ * 使用id选择器定位id="table"标签
+ * 然后渲染其子标签tr的子标签td的标签样式
+ */
+#table tr td {
+	width: 100px;/* 宽100px */
+	background: #CCCCCC;/* 背景色 */
+	padding: 10px 0;/* 设置顶部和底部内间距10px 左右为0 */
+	text-align: center;/* 居中 */
+	cursor: pointer;/* 鼠标变手势 */
+	border-radius: 2px;/* 边角变圆角 */
+}
+
+/* 添加鼠标移动至指定元素的样式修改 */
+#table tr td:hover {
+	background: #AAAAAA;/* 背景色 */
+}
+/* -------------------------求签部分 end------------------------ */
+
+/* -------------------------求签结果 begin---------------------- */
+/*
+ * 使用id选择器渲染id="result"标签的样式
+ */
+#result {
+	height: 200px;/* 高度200px */
+	border: 2px solid #FFAAAA;/* 边框颜色 粗细2px */
+	margin-top: 10px;/* 设置外间距 */
+	position: relative;/* 子标签相对于父标签定位 */
+	overflow: hidden;/* 超出标签范围内容隐藏 */
+}
+
+/*
+ * 使用id选择器渲染id="check"标签的样式
+ */
+#check {
+	text-align: center;/* 居中 */
+	font-size: 30px;/* 字体大小 */
+	padding-top: 70px;/* 设置顶部内间距70px */
+}
+
+/*
+ * 使用id选择器渲染id="ask"标签的样式
+ */
+#ask {
+	background: crimson;/* 背景色深红色 */
+	position: absolute;/* 相对于父标签使用绝对定位 */
+	top: 205px;/* 从父标签顶部开始计算 */
+	left: 0px;/* 从父标签左部开始计算 */
+	width: 100%;/* 宽度是其父元素的100% */
+	height: 100%;/* 高度是其父元素的100% */
+	font-size: 100px;/* 字体大小 */
+	font-weight: bold;/* 字体加粗 */
+	cursor: pointer;/* 鼠标变手势 */
+	text-align: center;/* 居中 */
+    line-height: 200px;/* 行间距 */
+    color: white;/* 字体白色 */
+    
+    transition: all 0.5s;/* 所有样式改变效果耗时0.5秒 */
+}
+
+/*
+ * 使用id选择器渲染id="answer"标签的样式
+ */
+#answer {
+	background: white;/* 背景色白色 */
+	position: absolute;/* 相对于父标签使用绝对定位 */
+	top: 205px;/* 从父标签顶部开始计算 */
+	left: 0px;/* 从父标签左部开始计算 */
+	width: 100%;/* 宽度是其父元素的100% */
+	height: 100%;/* 高度是其父元素的100% */
+	font-size: 100px;/* 字体大小 */
+	font-weight: bold;/* 字体加粗 */
+	cursor: pointer;/* 鼠标变手势 */
+	text-align: center;/* 居中 */
+    line-height: 200px;/* 行间距 */
+    
+    transition: all 0.5s;/* 所有样式改变效果耗时0.5秒 */
+}
+/* -------------------------求签结果 end------------------------ */
